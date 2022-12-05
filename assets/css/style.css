@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+:root {
+    --white: #fafafa;
+    --pink: rgba(224, 112, 112, 0.9);
+    --dim-grey: rgba(109, 109, 100, 1);
+    --dark-grey: rgba(51, 51, 51, 1);
+}
+
+body {
+    font-family: "raleway", sans-serif;
+    font-weight: 300;
+    background-color: var(--white);
+    color: var(--dim-grey);
+}
+
+p {
+    text-align: center;
+
+}
+
+
+h1, h2 {
+    font-family: "poiret one", sans-serif;
+    font-weight: 300
+}
+
+h2 {
+    text-align: center;
+}
+
+#header-container {
+    background-color: var(--dark-grey);
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    background-color: var(--pink);
+    width: 100%;
+}
+
+#logo{
+    margin: 15px;
+   
+}
+
+#logo a {
+    /* text-decoration: none; */
+    color: var(--dark-grey);
+}
+
+
+#menu {
+    text-align: center;
+    /* margin-top: 5px;
+    margin-bottom: 5px; */
+}
+
+li {
+    display: inline-block; 
+    font-size: 110%;
+    list-style: none;
+    margin-right: 10px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+
+
+/* hero image*/
+
+
+
+.main-image {
+    height: 600px;
+    width: 100%;
+    background: url("../images/Handmade-furniture-scaled3.webp") no-repeat center center;
+    /* margin-top: 50px; */
+    /* overflow: hidden;
+    position: relative; */
+}
+
+/*what we do*/
+
+#what-img {
+    height:600px;
+    width: 75%;
+    background: url("../images/rachel03\(2\).jpg");
+    margin: 10px auto;
+        
+}
+
+
+#what {
+    width: 75%;
+    margin: 10px auto;
+}
+
+/*why we do*/
+
+
+
+#why-img {
+    height: 600px;
+    width: 75%;
+    background: url("../images/Plywood+Balance+Bench.png");    
+    margin: 10px auto;
+}
+
+#why {
+    width: 75%;
+    padding-bottom: 100px;
+    margin: 10px auto;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(224, 112, 112, 0.939); 
+    width: 100%;
+}
+
+#socials > li {
+    display: inline;
+   
+}
+
+#socials > ul {
+    text-align: center;
+    margin: 10px;
+}
+
+#footer-contact {
+    text-align: center;
+    margin: 10px;
+}
+
+#iframe {
+    display: flex;
+    justify-content: center;
+   
+}
+
+iframe {
+    height:200px;
+    width: 350px;
+    flex-grow: 1;
+    margin: 3px;
+}
+
+#flexbox-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.flexbox-item {
+    height: 200px;
+    width: 150px;
+    background-color: aqua;
+    border: 2px solid black;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+#confirmation-div {
+   text-align: center;
+   margin: 10px;
+}
