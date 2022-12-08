@@ -31,7 +31,7 @@
                             <a href="about.html">About Us</a>
                         </li>
                         <li id="contact-us">    
-                            <a href="/about.html#link">Contact Us</a>
+                            <a href="about.html#link">Contact Us</a>
                         </li>    
                         </ul>
                     </nav>
@@ -39,18 +39,20 @@
             </div>
         </div>    
         </header>
+<main>
     <section>
         <div class="main-image"></div>
     </section>
     <section>
-        <h2>About us</h2>
-        <div>
-            <p>When Bee9 Design was founded, it was on the idea of creating unique furniture
+        <div id="about-paragraph">
+            <h2>About us</h2>
+        
+                <p>When Bee9 Design was founded, it was on the idea of creating unique furniture
                 that actively improves life. That meant raw materials, real craftsmen, and a commitment to trying 
                 new ideas without sacrificing quality. Bee9 Design furniture isn't mass-produced; every new design
                 is a result of months of work, all  in service of creating furniture and accessories that enhance 
                 daily life.
-            </p>
+                </p>
         </div>
         <div id="flexbox-container">
             <div class="flexbox-item"></div>
@@ -58,13 +60,21 @@
         </div>
     </section>
     <secton id="link">
+    <div id="contact-us-para">
         <h2 >Contact Us</h2>
+        <p>Feel free to get in touch with any questions about our work or to start the journey in getting a beatuful piece of bespoke furniture designed and made by Design In Ply
+            or to organise a visit to our studio to get inspiration and sit down with one of our designers.
+        </p>
+    </div>
         <div class="form-div" >
             <form action="confirmation.html">
-                <input type="text" name="name">
-                <input type="email" name="email">
-                <input type="text" name="message">
-                <input type="submit">
+                <label for="name">Name</label>
+                    <input type="text" name="name">
+                <label for="email">Email</label>
+                    <input type="email" name="email">
+                <label id="input-message" for="message">Message</label>
+                    <textarea name="message"></textarea>
+                    <input type="submit" id="submit">
             </form>
         </div>
         <div id="iframe">
@@ -72,26 +82,29 @@
             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </secton>
-    <footer>
-        <div id="footer">
-            <!-- <div id="footer-contact">
-                <p>Ph:0863618686 email:dylankane3@gmail.com</p>
-                <p>1 Link Road, Glasthule, Co. Dublin</p>
-            </div> -->
-            <div id="socials">
-                <ul>
-                <li>
-                    <a href="https://www.facebook.com" target="blank" rel="noopener" arial-label="visit our facebook page (opens in new tab)">Facebook</i></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com" target="blank" rel="noopener" arial-label="visit our facebook page(opens in new tab)">Facebook</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com" target="blank" rel="noopener" arial-label="visit our facebook page(opens in new tab)">Facebook</i></a>
-                </li>
-                </ul>
-            </div>
-        </div>    
-        </footer>
+    <footer id="footer">
+        <div>
+            <p>designinply@gmail.com</p>
+            <p>1 Link Road, Glasthule, Co. Dublin, A96Y6H0</p>
+        </div>   
+        <ul id="socials">
+            <li>
+                <a href="https://www.facebook.com" target="blank" rel="noopener"
+                 arial-label="visit our facebook page (opens in new tab)"><i class="fa-brands fa-square-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com" target="blank" rel="noopener"
+                 arial-label="visit our instagram page(opens in new tab)"><i class="fa-brands fa-square-instagram"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com" target="blank" rel="noopener"
+                 arial-label="visit our youtube channel(opens in new tab)"><i class="fa-brands fa-square-youtube"></i></i></a>
+            </li>
+        </ul> 
+        <div>
+            <p>Copyright <span><i class="fa-regular fa-copyright"></i></span> Design In Ply Ltd 2022</p>
+        </div>   
+    </footer>
+    <script src="https://kit.fontawesome.com/d11678a87a.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -8,27 +8,33 @@
 
 :root {
     --white: #fafafa;
-    --pink: rgba(224, 112, 112, 0.9);
+    --pink: rgba(228, 137, 137, 0.9);
     --dim-grey: rgba(109, 109, 100, 1);
     --dark-grey: rgba(51, 51, 51, 1);
 }
 
 body {
     font-family: "raleway", sans-serif;
-    font-weight: 300;
+    font-weight: bold;
     background-color: var(--white);
     color: var(--dim-grey);
 }
 
 p {
     text-align: center;
-
+    font-weight: bold;
 }
+
+
+
+
+
 
 
 h1, h2 {
     font-family: "poiret one", sans-serif;
-    font-weight: 300
+    font-weight: bold;
+    color: var(--dim-grey);
 }
 
 h2 {
@@ -36,24 +42,30 @@ h2 {
 }
 
 #header-container {
-    background-color: var(--dark-grey);
+    background-color: var(--white);
+    height: 90px;
 }
 
 #header {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     background-color: var(--pink);
     width: 100%;
+    height: 90px;
 }
 
 #logo{
-    margin: 15px;
+    padding-top: 15px;
    
 }
 
 #logo a {
     /* text-decoration: none; */
     color: var(--dark-grey);
+}
+
+#nav-bar {
+    text-align: center;
 }
 
 
@@ -63,11 +75,12 @@ h2 {
     margin-bottom: 5px; */
 }
 
-li {
+#menu, li {
     display: inline-block; 
     font-size: 110%;
     list-style: none;
     margin-right: 10px;
+    color: var(--dim-grey);
 }
 
 #menu a {
@@ -76,17 +89,36 @@ li {
 }
 
 
-/* hero image*/
+/* hero image & cover text*/
 
 
 
 .main-image {
+    
     height: 600px;
     width: 100%;
     background: url("../images/Handmade-furniture-scaled3.webp") no-repeat center center;
-    /* margin-top: 50px; */
-    /* overflow: hidden;
+    background-size: cover;
+    /* margin-top: 50px;
+    overflow: hidden;
     position: relative; */
+}
+
+#cover-text {
+    text-align: center;
+    width: 300px;
+    height:100px;
+    padding: 10px;
+    vertical-align: middle;
+    background-color: var(--pink);
+    bottom: 40px;
+    right: 40px;
+    position: absolute;
+    border-radius: 15px;
+}
+
+#hero-outer {
+    position: relative;
 }
 
 /*what we do*/
@@ -95,7 +127,8 @@ li {
     height:600px;
     width: 75%;
     background: url("../images/rachel03\(2\).jpg");
-    margin: 10px auto;
+    margin: 50px auto;
+    border-radius: 15px;
         
 }
 
@@ -103,6 +136,7 @@ li {
 #what {
     width: 75%;
     margin: 10px auto;
+    padding-bottom: 100px;
 }
 
 /*why we do*/
@@ -113,7 +147,8 @@ li {
     height: 600px;
     width: 75%;
     background: url("../images/Plywood+Balance+Bench.png");    
-    margin: 10px auto;
+    margin: 50px auto;
+    border-radius: 15px;
 }
 
 #why {
@@ -123,15 +158,19 @@ li {
 }
 
 #footer {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
+    color: var(--dark-grey);
     background-color: rgba(224, 112, 112, 0.939); 
     width: 100%;
 }
+#footer p {
+    padding: 10px;
+}
 
-#socials > li {
-    display: inline;
-   
+#socials{
+    text-align: center;
+    padding: 10px;
 }
 
 #socials > ul {
@@ -139,27 +178,42 @@ li {
     margin: 10px;
 }
 
-#footer-contact {
-    text-align: center;
+#socials i {
+    font-size: 200%;
     margin: 10px;
+    color: var(--dim-grey);
+}
+
+.footer-confirmation {
+    position: fixed;
+}
+
+#contact-us-para {
+    width: 75%;
+    padding-bottom: 100px;
+    margin: 25px auto;
 }
 
 #iframe {
     display: flex;
     justify-content: center;
-   
+      
 }
 
 iframe {
-    height:200px;
+    height: 200px;
     width: 350px;
     flex-grow: 1;
     margin: 3px;
+    border-radius: 15px; 
+    margin-bottom: 30px;
+    border: solid 2px var(--dark-grey);
 }
 
 #flexbox-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
     
 }
 
@@ -168,11 +222,138 @@ iframe {
     width: 150px;
     background-color: aqua;
     border: 2px solid black;
+    border-radius: 15px;
     margin: 10px;
     flex-grow: 1;
 }
 
 #confirmation-div {
-   text-align: center;
-   margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    margin: 10vh auto;
+   
+   
 }
+
+#confirmation-item {
+    height: 10vh;
+
+}
+
+/* gallery*/
+
+.title-projects {
+    margin: 15px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .image-gallery > li {
+    flex-basis: 350px; /* width: 350px; */
+  }
+  
+  .image-gallery li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 15px;
+  }
+
+  .image-gallery > li {
+    position: relative;
+    cursor: pointer;
+  }
+
+  /* gallery*/
+
+  #about-paragraph{
+    width: 75%;
+    padding-bottom: 100px;
+    margin: 25px auto;
+
+  }
+
+   /*form*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: solid 4px;
+    border-radius: 15px;
+    margin: 25px auto;
+    padding: 10px;
+    width: 75%;
+}
+
+ input {
+    border: solid 2px var(--dark-grey);
+    border-radius: 15px;
+ }
+
+ input[type=text] {
+    width: 100%;
+    height: 2em;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+ }
+
+ input[type=email] {
+    width: 100%;
+    height: 2em;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+ }
+ 
+ #input-message {
+    height: 50px;
+ }
+
+ textarea{
+    border: solid 2px var(--dark-grey);
+    border-radius: 15px;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+ }
+ 
+ #submit {
+    width: 20%;
+    height: 2em;
+    margin-bottom: 10px;
+ }
+
+ @media screen and (min-width: 700px) 
+ {
+    form {
+    width:50%
+    }
+ }
+
+
+
+
+ @media screen and (min-width: 1200px) 
+ {
+    form {
+    width:33%
+    }
+
+    .main-image {
+        height: 600px;
+        width: 100%;
+        background: url("../images/Handmade-furniture-scaled.webp") no-repeat center center;
+        background-size: cover;
+    }
+ }
